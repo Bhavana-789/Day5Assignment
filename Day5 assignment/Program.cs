@@ -7,33 +7,37 @@ namespace Day5_assignment
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to basic C# programs");
-            //UC9_Alphabet
-            Console.WriteLine("Program to check Vowel or Consonant");
-            char ch;
-            Console.WriteLine("Enter a character :");
-            ch = Convert.ToChar(Console.ReadLine());
-            switch (ch)
+            //UC10_LargestNum
+            Console.WriteLine("Program to check largest number");
+            int n1, n2, n3;
+            Console.Write("Enter First Number: ");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Second Number: ");
+            n2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Third Number: ");
+            n3 = Convert.ToInt32(Console.ReadLine());
+
+            if (n1 > n2)
             {
-                case 'a':
-                case 'A':
-                case 'e':
-                case 'E':
-                case 'i':
-                case 'I':
-                case 'o':
-                case 'O':
-                case 'u':
-                case 'U':
-                    Console.WriteLine($"\n\t{ch} is a Vowel");
-                    break;
-                default:
-                    Console.WriteLine($"\n\t{ch} is a Consonant");
-                    break;
+                if (n1 > n3)
+                {
+                    Console.WriteLine("The 1st number is largest");
+                }
+                else
+                {
+                    Console.WriteLine("The 3rd Number is largest");
+                }
             }
-            Console.ReadKey();
+            else if (n2 > n3)
+            {
+                Console.WriteLine("The 2nd number is largest");
+            }
+            else
+                Console.WriteLine("The 3rd number is largest");
         }
     }
 }
+
     
 
 
