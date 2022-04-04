@@ -7,21 +7,30 @@ namespace Day5_assignment
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to basic C# programs");
-            //UC8_EvenOrOdd
-            Console.WriteLine("Pragram to find Even or Odd of given number");
-            int x;
-            Console.WriteLine("Enter a Number :");
-            x = Convert.ToInt32(Console.ReadLine());
-            if (x % 2 == 0)
+            //UC9_Alphabet
+            Console.WriteLine("Program to check Vowel or Consonant");
+            char ch;
+            Console.WriteLine("Enter a character :");
+            ch = Convert.ToChar(Console.ReadLine());
+            switch (ch)
             {
-                Console.WriteLine("Entered Number is an Even Number");
-                Console.ReadLine();
+                case 'a':
+                case 'A':
+                case 'e':
+                case 'E':
+                case 'i':
+                case 'I':
+                case 'o':
+                case 'O':
+                case 'u':
+                case 'U':
+                    Console.WriteLine($"\n\t{ch} is a Vowel");
+                    break;
+                default:
+                    Console.WriteLine($"\n\t{ch} is a Consonant");
+                    break;
             }
-            else
-            {
-                Console.WriteLine("Entered Number is an Odd Number");
-                Console.ReadLine();
-            }
+            Console.ReadKey();
         }
     }
 }
