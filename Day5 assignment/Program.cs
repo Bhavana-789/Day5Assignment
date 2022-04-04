@@ -7,23 +7,26 @@ namespace Day5_assignment
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic C# programs");
-            //UC5_Factors
-            Console.WriteLine("Program to find Factors of a number");
-            int a, b;
-            Console.Write("Enter the Number: ");
-            a = Convert.ToInt32(Console.ReadLine());
-            for (b = 1; b <= a; b++)
-            {
-                if (a % b == 0)
-                {
-                    Console.WriteLine(b + "is a factor of" + a);
+            //UC6_Division
+            Console.WriteLine("Computing Quotient and remainder");
+            int Divisor, Dividend;
+            Console.Write("Enter the value of Divisor: ");
+            Divisor = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the value of Dividend: ");
+            Dividend = Convert.ToInt32(Console.ReadLine());
 
-                }
-            }
+            int quotient = Dividend / Divisor;
+            int remainder = Dividend % Divisor;
+            Console.WriteLine("Quotient=" + quotient);
+            Console.WriteLine("Remainder=" + remainder);
             Console.ReadLine();
         }
     }
 }
+
+        
+    
+
 
     
     
