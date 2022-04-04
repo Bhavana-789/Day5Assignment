@@ -8,21 +8,23 @@ namespace Day5_assignment
         {
             Console.WriteLine("Welcome to Basic C# programs");
             //UC2_LeapYear
-            Console.WriteLine("Program to Check LeapYear");
-            Console.WriteLine("Enter year:");
-            int year = int.Parse(Console.ReadLine());
-            if (((year % 4 == 0) && (year % 100! == 0)) || (year % 400 == 0))
+            Console.Write("Calculating power of 2");
+            Console.WriteLine("------------------");
+            int value = 2;
+            int N;
+            for (N = 0; N <= 30; N++)
             {
-                Console.WriteLine("{0} is a Leap Year", year);
+                Console.WriteLine($"{value}^{N} = {(long)Math.Pow(value, N)} (0*{(long)Math.Pow(value, N):X})");
             }
-            else
-            {
-                Console.WriteLine("{0} is not a Leap year", year);
-            }
-
         }
     }
 }
+
+
+
+    
+
+
 
 
 
