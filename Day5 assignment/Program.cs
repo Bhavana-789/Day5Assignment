@@ -6,20 +6,24 @@ namespace Day5_assignment
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Basic C# programs");
-            //UC6_Division
-            Console.WriteLine("Computing Quotient and remainder");
-            int Divisor, Dividend;
-            Console.Write("Enter the value of Divisor: ");
-            Divisor = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the value of Dividend: ");
-            Dividend = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Welcome to basic C# programs");
+            //UC7_Swapping
+            Console.WriteLine("Pragram to swap a number");
+            int num1, num2;
+            Console.Write("Enter First Number: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Second Number: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
 
-            int quotient = Dividend / Divisor;
-            int remainder = Dividend % Divisor;
-            Console.WriteLine("Quotient=" + quotient);
-            Console.WriteLine("Remainder=" + remainder);
-            Console.ReadLine();
+            int temp;
+            temp = num1;
+            num1 = num2;
+            num2 = temp;
+
+            Console.WriteLine("After Swapping:");
+            Console.Write("First Number :{0} \nSecond Number :{1}", num1, num2);
+
+            Console.ReadKey();
         }
     }
 }
